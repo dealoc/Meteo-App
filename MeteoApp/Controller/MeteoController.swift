@@ -14,6 +14,14 @@ class MeteoController: UIViewController {
 
     @IBOutlet weak var villeLabel: UILabel!
     
+    
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var iconeTempActuel: UIImageView!
+    @IBOutlet weak var descTempActuel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
     
@@ -58,10 +66,19 @@ class MeteoController: UIViewController {
                                 }
                             }
                             // Recharger les données
+                            self.miseEnPlaceValeursDuMoment()
                         }
                     }
                 }
             }
+        }
+    }
+    
+    func miseEnPlaceValeursDuMoment() {
+        if previsions.count > 0 {
+            let tempsActuel = previsions[0]
+            temperatureLabel.text = tempsActuel.temperateur.convertirEnIntString()
+            descTempActuel.text = tempsActuel.desc
         }
     }
 

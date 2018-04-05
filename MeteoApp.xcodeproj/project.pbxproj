@@ -15,6 +15,7 @@
 		205675F72076695F003144BA /* LocalisationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675F62076695F003144BA /* LocalisationExtension.swift */; };
 		205675FA20766BB1003144BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675F920766BB1003144BA /* API.swift */; };
 		20791DE32076860400BBD6EC /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20791DE22076860400BBD6EC /* Prevision.swift */; };
+		20791DE520768CF900BBD6EC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20791DE420768CF900BBD6EC /* Extension.swift */; };
 		A53A4003E2AAF7BE5B0F92CE /* Pods_MeteoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259E1A9FCAF8CAA6EA84C12 /* Pods_MeteoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		205675F62076695F003144BA /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
 		205675F920766BB1003144BA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		20791DE22076860400BBD6EC /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
+		20791DE420768CF900BBD6EC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		48AA99D6C66D361F82030F73 /* Pods-MeteoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeteoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeteoApp/Pods-MeteoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5767E68B9F0A49FA203B6616 /* Pods-MeteoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeteoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeteoApp/Pods-MeteoApp.release.xcconfig"; sourceTree = "<group>"; };
 		7259E1A9FCAF8CAA6EA84C12 /* Pods_MeteoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeteoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				20791DE22076860400BBD6EC /* Prevision.swift */,
+				20791DE420768CF900BBD6EC /* Extension.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				205675F72076695F003144BA /* LocalisationExtension.swift in Sources */,
 				205675F5207668CB003144BA /* MeteoController.swift in Sources */,
 				20791DE32076860400BBD6EC /* Prevision.swift in Sources */,
+				20791DE520768CF900BBD6EC /* Extension.swift in Sources */,
 				205675FA20766BB1003144BA /* API.swift in Sources */,
 				205675DF20766879003144BA /* AppDelegate.swift in Sources */,
 			);
