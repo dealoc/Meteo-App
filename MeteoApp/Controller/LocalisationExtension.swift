@@ -26,7 +26,7 @@ extension MeteoController: CLLocationManagerDelegate {
         let positionActuelle = locations[0]
         let latitude = positionActuelle.coordinate.latitude
         let longitude = positionActuelle.coordinate.longitude
-        print("Latitude: \(latitude) -> longitude: \(longitude)")
+        obtenirPrevisionsMeteo(latitude: latitude, longitude: longitude)
         
     }
     
