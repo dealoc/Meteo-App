@@ -13,6 +13,7 @@
 		205675E92076687B003144BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205675E72076687B003144BA /* LaunchScreen.storyboard */; };
 		205675F5207668CB003144BA /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675F4207668CB003144BA /* MeteoController.swift */; };
 		205675F72076695F003144BA /* LocalisationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675F62076695F003144BA /* LocalisationExtension.swift */; };
+		205675FA20766BB1003144BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205675F920766BB1003144BA /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		205675EA2076687B003144BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205675F4207668CB003144BA /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
 		205675F62076695F003144BA /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
+		205675F920766BB1003144BA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		205675DD20766879003144BA /* MeteoApp */ = {
 			isa = PBXGroup;
 			children = (
+				205675F820766BA4003144BA /* Ressources */,
 				205675F22076689E003144BA /* Modele */,
 				205675F120766895003144BA /* Vue */,
 				205675F020766890003144BA /* Controller */,
@@ -97,6 +100,14 @@
 				205675E72076687B003144BA /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		205675F820766BA4003144BA /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				205675F920766BB1003144BA /* API.swift */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				205675F72076695F003144BA /* LocalisationExtension.swift in Sources */,
 				205675F5207668CB003144BA /* MeteoController.swift in Sources */,
+				205675FA20766BB1003144BA /* API.swift in Sources */,
 				205675DF20766879003144BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
