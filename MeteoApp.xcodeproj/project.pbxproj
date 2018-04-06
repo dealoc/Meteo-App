@@ -22,6 +22,7 @@
 		20791DED207692FD00BBD6EC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20791DEC207692FD00BBD6EC /* TableViewExtension.swift */; };
 		209148E82077982400B12E35 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209148E72077982400B12E35 /* DateHelper.swift */; };
 		209148EA20779C2000B12E35 /* PrevisionJournaliere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209148E920779C2000B12E35 /* PrevisionJournaliere.swift */; };
+		209148EC2077A26E00B12E35 /* JourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209148EB2077A26E00B12E35 /* JourCell.swift */; };
 		A53A4003E2AAF7BE5B0F92CE /* Pods_MeteoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259E1A9FCAF8CAA6EA84C12 /* Pods_MeteoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		20791DEC207692FD00BBD6EC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		209148E72077982400B12E35 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		209148E920779C2000B12E35 /* PrevisionJournaliere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionJournaliere.swift; sourceTree = "<group>"; };
+		209148EB2077A26E00B12E35 /* JourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourCell.swift; sourceTree = "<group>"; };
 		48AA99D6C66D361F82030F73 /* Pods-MeteoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeteoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeteoApp/Pods-MeteoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5767E68B9F0A49FA203B6616 /* Pods-MeteoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeteoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeteoApp/Pods-MeteoApp.release.xcconfig"; sourceTree = "<group>"; };
 		7259E1A9FCAF8CAA6EA84C12 /* Pods_MeteoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeteoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			children = (
 				20791DE82076906000BBD6EC /* PrevisionCell.swift */,
 				20791DEA2076916200BBD6EC /* DonneeUniqueCell.swift */,
+				209148EB2077A26E00B12E35 /* JourCell.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				20791DEB2076916200BBD6EC /* DonneeUniqueCell.swift in Sources */,
 				205675F5207668CB003144BA /* MeteoController.swift in Sources */,
 				20791DE720768DE400BBD6EC /* ImageDownloader.swift in Sources */,
+				209148EC2077A26E00B12E35 /* JourCell.swift in Sources */,
 				209148EA20779C2000B12E35 /* PrevisionJournaliere.swift in Sources */,
 				20791DE32076860400BBD6EC /* Prevision.swift in Sources */,
 				20791DE520768CF900BBD6EC /* Extension.swift in Sources */,

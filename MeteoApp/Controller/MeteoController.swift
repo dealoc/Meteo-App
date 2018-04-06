@@ -25,6 +25,9 @@ class MeteoController: UIViewController {
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
     var previsionsJournalieres = [PrevisionJournaliere]()
+    var enTrainDeRecupererLeDonnees = false
+    var jour = UIColor(red: 0, green: 191 / 255, blue: 1, alpha: 1)
+    var nuit = UIColor(red: 19 / 255, green: 24 / 255, blue: 98 / 255, alpha: 1)
     
     
     override func viewDidLoad() {
@@ -34,6 +37,7 @@ class MeteoController: UIViewController {
     }
 
     func obtenirPrevisionsMeteo(latitude: Double, longitude: Double) {
+        enTrainDeRecupererLeDonnees = true
         let urlDeBase = "http://api.openweathermap.org/data/2.5/forecast?"
         let latitude = "lat=" + String(latitude)
         let longitude = "&lon=" + String(longitude)
@@ -69,7 +73,7 @@ class MeteoController: UIViewController {
                             }
                             // Recharger les données
                             self.miseEnPlaceValeursDuMoment()
-                            self.tableView.reloadData()
+                            self.obtenirPrevisionsJournalieres()
                         }
                     }
                 }
@@ -83,6 +87,11 @@ class MeteoController: UIViewController {
             temperatureLabel.text = tempsActuel.temperateur.convertirEnIntString()
             descTempActuel.text = tempsActuel.desc
             ImageDownloader.obtenir.imageDepuis(tempsActuel.icone, imageView: iconeTempActuel)
+            if tempsActuel.icone.contains("d") {
+                view.backgroundColor = jour
+            } else {
+                view.backgroundColor = nuit
+            }
         }
     }
     
@@ -115,11 +124,12 @@ class MeteoController: UIViewController {
                     if prevision.date.contains("12:") {
                         icone = prevision.icone
                         desc = prevision.desc
-                        
                     }
                 }
+                
             }
         }
+        enTrainDeRecupererLeDonnees = false
         self.tableView.reloadData()
     }
 
